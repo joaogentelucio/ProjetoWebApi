@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "CadastroClientes.Controllers.ClientesController",
+    "Method": "Alterar",
+    "RelativePath": "api/Clientes/Alterar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CadastroClientes.Controllers.ClientesController",
+    "Method": "CriarUsuario",
+    "RelativePath": "api/Clientes/CriarUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cadastro",
+        "Type": "CadastroUsuarios.Models.Usuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CadastroClientes.Controllers.ClientesController",
+    "Method": "DeletarUsuario",
+    "RelativePath": "api/Clientes/DeletarUsuario",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CadastroClientes.Controllers.ClientesController",
+    "Method": "LerUsuarios",
+    "RelativePath": "api/Clientes/LerUsuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
