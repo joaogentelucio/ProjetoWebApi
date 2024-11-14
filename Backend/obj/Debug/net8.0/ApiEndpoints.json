@@ -1,24 +1,29 @@
 [
   {
-    "ContainingType": "CadastroClientes.Controllers.ClientesController",
-    "Method": "Alterar",
-    "RelativePath": "api/Clientes/Alterar",
+    "ContainingType": "CadastroUsuarios.Controllers.UsuariosController",
+    "Method": "AlterarUsuario",
+    "RelativePath": "api/Usuarios/AlterarUsuario/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
+      },
+      {
+        "Name": "usuarioAtualizado",
+        "Type": "CadastroUsuarios.Models.Usuarios",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CadastroClientes.Controllers.ClientesController",
+    "ContainingType": "CadastroUsuarios.Controllers.UsuariosController",
     "Method": "CriarUsuario",
-    "RelativePath": "api/Clientes/CriarUsuario",
+    "RelativePath": "api/Usuarios/CriarUsuario",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -32,29 +37,39 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CadastroClientes.Controllers.ClientesController",
+    "ContainingType": "CadastroUsuarios.Controllers.UsuariosController",
     "Method": "DeletarUsuario",
-    "RelativePath": "api/Clientes/DeletarUsuario",
+    "RelativePath": "api/Usuarios/DeletarUsuario/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CadastroClientes.Controllers.ClientesController",
+    "ContainingType": "CadastroUsuarios.Controllers.UsuariosController",
     "Method": "LerUsuarios",
-    "RelativePath": "api/Clientes/LerUsuarios",
+    "RelativePath": "api/Usuarios/LerUsuarios",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CadastroUsuarios.Models.Usuarios, Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

@@ -1,78 +1,91 @@
 ﻿using CadastroUsuarios.Models;
 using CadastroUsuarios.Models.Repository;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
-namespace CadastroClientes.Controllers
+namespace CadastroUsuarios.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClientesController : ControllerBase
+    public class UsuariosController : ControllerBase
     {
+        private readonly UsuariosRepository _usuariosRepository;
+
+        public UsuariosController(UsuariosRepository usuariosRepository)
+        {
+            _usuariosRepository = usuariosRepository;
+        }
+
+        // Criação de um novo usuário
         [HttpPost("CriarUsuario")]
-        public object CriarUsuario([FromBody] Usuarios cadastro)
+        public IActionResult CriarUsuario([FromBody] Usuarios cadastro)
         {
+            if (cadastro == null)
+                return BadRequest("Dados do usuário inválidos.");
+
             try
             {
-                UsuariosRepository usuarios = new UsuariosRepository();
-                usuarios.Salvar(cadastro);
+                _usuariosRepository.Salvar(cadastro);
+                return CreatedAtAction(nameof(LerUsuarios), new { id = cadastro.Id }, cadastro);
             }
             catch (Exception ex)
             {
-
+                return BadRequest($"Erro ao criar o usuário: {ex.Message}");
             }
-
-            return null;
         }
 
+        // Ler todos os usuários
         [HttpGet("LerUsuarios")]
-        public object LerUsuarios()
+        public ActionResult<List<Usuarios>> LerUsuarios()
         {
-            List<Usuarios> listarUsuarios = null;
             try
-            { 
-                UsuariosRepository usuariosRepo = new UsuariosRepository();
-                listarUsuarios = usuariosRepo.LerUsuarios();
+            {
+                var usuarios = _usuariosRepository.LerUsuarios();
+                return Ok(usuarios);
             }
             catch (Exception ex)
             {
-
+                return BadRequest($"Erro ao obter usuários: {ex.Message}");
             }
-
-            return listarUsuarios;
         }
 
-        [HttpPut("Alterar")]
-        public object Alterar(int Id)
+        // Alterar os dados de um usuário
+        [HttpPut("AlterarUsuario/{id}")]
+        public IActionResult AlterarUsuario(int id, [FromBody] Usuarios usuarioAtualizado)
         {
+            if (usuarioAtualizado == null)
+                return BadRequest("Dados do usuário inválidos.");
+
             try
             {
-                UsuariosRepository usuarios = new UsuariosRepository();
-                usuarios.AlterarUsuario(Id);
+                var sucesso = _usuariosRepository.AlterarUsuario(id, usuarioAtualizado);
+                if (!sucesso)
+                    return NotFound("Usuário não encontrado.");
+
+                return Ok("Usuário atualizado com sucesso.");
             }
             catch (Exception ex)
             {
-
+                return BadRequest($"Erro ao atualizar o usuário: {ex.Message}");
             }
-
-            return null;
         }
 
-        
-
-        [HttpDelete("DeletarUsuario")]
-        public object DeletarUsuario(int Id)
+        // Deletar um usuário pelo ID
+        [HttpDelete("DeletarUsuario/{id}")]
+        public IActionResult DeletarUsuario(int id)
         {
             try
             {
+                var sucesso = _usuariosRepository.DeletarUsuario(id);
+                if (!sucesso)
+                    return NotFound("Usuário não encontrado.");
 
+                return Ok("Usuário deletado com sucesso.");
             }
             catch (Exception ex)
             {
-
+                return BadRequest($"Erro ao deletar o usuário: {ex.Message}");
             }
-
-            return null;
         }
     }
 }

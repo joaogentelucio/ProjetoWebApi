@@ -1,17 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\Application\\Backend\\",
+  "WorkspaceRootPath": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|c:\\users\\joaovitor\\documents\\github\\application\\backend\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|c:\\users\\joaovitor\\documents\\github\\application\\backend\\models\\repository\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|c:\\users\\joaovitor\\documents\\github\\projetowebapi\\backend\\models\\repository\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|solutionrelative:models\\repository\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|c:\\users\\joaovitor\\documents\\github\\application\\backend\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|c:\\users\\joaovitor\\documents\\github\\projetowebapi\\backend\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|c:\\users\\joaovitor\\documents\\github\\projetowebapi\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|c:\\users\\joaovitor\\documents\\github\\projetowebapi\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|c:\\users\\joaovitor\\documents\\github\\projetowebapi\\backend\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{245B7C7B-2010-4C9F-8B68-08C4879642A2}|Backend.csproj|solutionrelative:models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,42 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-14T03:22:20.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T03:03:10.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\Application\\Backend\\Controllers\\UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\Application\\Backend\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwC0AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T00:07:33.024Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UsuariosRepository.cs",
-              "DocumentMoniker": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\Application\\Backend\\Models\\Repository\\UsuariosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\Models\\Repository\\UsuariosRepository.cs",
               "RelativeDocumentMoniker": "Models\\Repository\\UsuariosRepository.cs",
-              "ToolTip": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\Application\\Backend\\Models\\Repository\\UsuariosRepository.cs",
+              "ToolTip": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\Models\\Repository\\UsuariosRepository.cs",
               "RelativeToolTip": "Models\\Repository\\UsuariosRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAvwBQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T00:10:06.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\Application\\Backend\\Models\\Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\Models\\Usuarios.cs",
               "RelativeDocumentMoniker": "Models\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\Application\\Backend\\Models\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\JoaoVitor\\Documents\\GitHub\\ProjetoWebApi\\Backend\\Models\\Usuarios.cs",
               "RelativeToolTip": "Models\\Usuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T11:52:11.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T11:52:11.968Z"
             }
           ]
         }
